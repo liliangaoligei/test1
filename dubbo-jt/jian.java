@@ -1,4 +1,4 @@
 @151515
 public void static do() {
-	syso
+	syso jianijiani
 }
