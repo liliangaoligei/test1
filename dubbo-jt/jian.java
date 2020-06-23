@@ -2,9 +2,7 @@
 public void static do() {
 
 	syso  jianjian123
-}
-JIJIJIJIJIJIJIJIJIJIJI
-	syso jianijiani
+
 	
 	
 }
