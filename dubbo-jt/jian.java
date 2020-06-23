@@ -5,4 +5,5 @@ public void static do() {
 }
 JIJIJIJIJIJIJIJIJIJIJI
 	syso jianijiani
+	JIANJINAJINJIJNNJI
 }
