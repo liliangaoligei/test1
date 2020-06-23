@@ -1,0 +1,27 @@
+server:
+  port: 9000
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/jtdb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    username: root
+    password: root
+    
+dubbo:
+  scan:
+    basePackages: com.jt
+  application:
+    name: provider-user
+  registry:
+    address: zookeeper://192.168.148.129:2181?backup=192.168.148.129:2182,192.168.148.129:2183
+  protocol:
+    name: dubbo #协议  底层封装了TCP/IP协议
+    port: 20880 #服务的唯一端口号信息
+
+      
+mybatis-plus:
+  type-aliases-package: com.jt.dubbo.pojo       #配置别名包路径
+  mapper-locations: classpath:/mybatis/mappers/*.xml  #添加mapper映射文件
+  configuration:
+    map-underscore-to-camel-case: true                #开启驼峰映射规则
